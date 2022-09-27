@@ -12,11 +12,15 @@ Random generator = new Random();
 int dmg = generator.Next(3, 17);
 
 while (hpa > 0 && hpb > 0){
+    Console.WriteLine("NY RUNDA!");
+    Console.ReadLine();
     
+
     dmg = generator.Next(3, 17);
     hpb = hpb - dmg;
     Console.WriteLine($"{a} slog {b} och gjorde {dmg} skada, {b} har {hpb} HP!");
 
+    
     dmg = generator.Next(3, 17);
     hpa = hpa - dmg;
     Console.WriteLine($"{b} slog {a} och gjorde {dmg} skada, {a} har {hpa} HP!");
